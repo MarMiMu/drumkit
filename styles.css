@@ -1,0 +1,36 @@
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+.header {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.wrapper{
+  width: 500px;
+  margin: 0 auto; 
+  position: relative;
+}
+
+.keyboard{
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr; 
+  grid-row-gap:40px;
+  justify-items:center; 
+  margin-bottom:100px; 
+}
+.key{
+  width:100px;
+  height:100px; 
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  border: 5px solid;
+  transition: all .12s ease-in-out;
+}
+
+.playing {
+  transform: scale(1.15);
+  border-color: red;
+  box-shadow: 0 0 1rem red;
+}
