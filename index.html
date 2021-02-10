@@ -1,68 +1,71 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8"> 
-		<title>Drum Kit</title>
-		<link rel="stylesheet" type="text/css" href="styles.css">
-	</head>
-  	<body>
-		<div class = "main">
-			<div class = "header">
-				<h1> DRUM KIT </h1>
-				<p> Press the keys on your keyboard to play the respective sound </p>
-			</div>
-			<div class="wrapper">
-        <section class="keyboard">
-            <div class="key" id="a">
-                <p>A</p>
-                <span class="sound">clap</span>
-            </div>
-            <div id="s" class="key">
-                <p>S</p>
-                <span class="sound">hihat</span>
-            </div>
-            <div id="d" class="key">
-                <p>D</p>
-                <span class="sound">kick</span>
-            </div>
-            <div id="f" class="key">
-                <p>F</p>
-                <span class="sound">openhat</span>
-            </div>
-            <div id="g" class="key">
-                <p>G</p>
-                <span class="sound">boom</span>
-            </div>
-            <div id="h" class="key">
-                <p>H</p>
-                <span class="sound">ride</span>
-            </div>
-            <div id="j" class="key">
-                <p>J</p>
-                <span class="sound">snare</span>
-            </div>
-            <div id="k" class="key">
-                <p>K</p>
-                <span class="sound">tom</span>
-            </div>
-            <div id="l" class="key">
-                <p>L</p>
-                <span class="sound">tink</span>
-            </div>
-        </section>
-    </div>
 
-    <audio id="a" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2538470/clap.wav"></audio>
-    <audio id="s" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2538470/hihat.wav"></audio>
-    <audio id="d" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2538470/kick.wav"></audio>
-    <audio id="f" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2538470/open-hat.wav"></audio>
-    <audio id="g" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2538470/boom.wav"></audio>
-    <audio id="h" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2538470/ride.wav"></audio>
-    <audio id="j" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2538470/snare.wav"></audio>
-    <audio id="k" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2538470/tom.wav"></audio>
-    <audio id="l" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2538470/tink.wav"></audio>
-			
-		</div> 
-		<script src="app.js" charset="utf-8"></script>  
- 	</body>
+<head>
+    <meta charset="utf-8">
+    <title>Drum Kit App</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="header">
+            <h1> DRUM KIT </h1>
+            <p> Press the keys on your keyboard to play the respective sound </p>
+        </div>
+        <div class="wrapper">
+            <section class="keyboard">
+                <div class="key" id="a">
+                    <p>A</p>
+                    <span class="sound">clap</span>
+                </div>
+                <div id="s" class="key">
+                    <p>S</p>
+                    <span class="sound">hihat</span>
+                </div>
+                <div id="d" class="key">
+                    <p>D</p>
+                    <span class="sound">kick</span>
+                </div>
+                <div id="f" class="key">
+                    <p>F</p>
+                    <span class="sound">openhat</span>
+                </div>
+                <div id="g" class="key">
+                    <p>G</p>
+                    <span class="sound">boom</span>
+                </div>
+                <div id="h" class="key">
+                    <p>H</p>
+                    <span class="sound">ride</span>
+                </div>
+                <div id="j" class="key">
+                    <p>J</p>
+                    <span class="sound">snare</span>
+                </div>
+                <div id="k" class="key">
+                    <p>K</p>
+                    <span class="sound">tom</span>
+                </div>
+                <div id="l" class="key">
+                    <p>L</p>
+                    <span class="sound">tink</span>
+                </div>
+            </section>
+        </div>
+
+        <audio id="a" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2538470/clap.wav"></audio>
+        <audio id="s" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2538470/hihat.wav"></audio>
+        <audio id="d" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2538470/kick.wav"></audio>
+        <audio id="f" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2538470/open-hat.wav"></audio>
+        <audio id="g" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2538470/boom.wav"></audio>
+        <audio id="h" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2538470/ride.wav"></audio>
+        <audio id="j" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2538470/snare.wav"></audio>
+        <audio id="k" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2538470/tom.wav"></audio>
+        <audio id="l" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2538470/tink.wav"></audio>
+
+    </div>
+    <script src="app.js" charset="utf-8"></script>
+</body>
+
 </html>
