@@ -1,15 +1,14 @@
-document.addEventListener("keydown",function(e){
+document.addEventListener("keydown", function (e) {
 	var keyPressed = e.key;
-	var audio = document.querySelector('audio#'+keyPressed);
-	var keyElement = document.querySelector('div#'+keyPressed);
+	var audio = document.querySelector('audio#' + keyPressed);
+	var keyElement = document.querySelector('div#' + keyPressed);
 	audio.currentTime = 0;
 	audio.play();
 	keyElement.classList.add('playing');
-  console.log(keyPressed);
 });
 var allKeys = document.querySelectorAll('.key');
-allKeys.forEach(function(key){
-	key.addEventListener('transitionend',function(e){
+allKeys.forEach(function (key) {
+	key.addEventListener('transitionend', function (e) {
 		e.target.classList.remove('playing');
 	});
 });
