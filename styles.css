@@ -1,85 +1,110 @@
-* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; margin:0; padding:0}
-
-i{
-  color: rgb(196, 196, 196); 
-  font-size: 2.5em;
-  margin-right: 0.1em;  
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0
 }
 
-h1{
-  margin-bottom: 1em; 
-  color: red; 
+html {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+i {
+  color: rgb(196, 196, 196);
+  font-size: 2.5em;
+  margin-right: 0.1em;
+}
+
+h1 {
+  margin-bottom: 1em;
+  color: red;
 }
 
 p {
   margin-bottom: 2em;
-  font-size: 1.5rem; 
-  color: white;  
-  font-family: 'Roboto';  
+  font-size: 1rem;
+  color: white;
+  font-family: 'Roboto';
 }
 
 span {
-  margin-top: 1em; 
+  margin-top: 1em;
   text-transform: uppercase;
-  color: rgb(196, 196, 196); 
+  color: rgb(196, 196, 196);
 }
 
-.key span{
-  font-family: 'Roboto'; 
-  color: white;  
+.key span {
+  font-family: 'Roboto';
+  color: white;
 }
 
-.logo{
-  display: flex; 
+.logo {
+  display: flex;
   justify-content: center;
   font-family: 'Monoton', cursive;
   font-weight: 400;
-  font-size: 2.6em; 
+  font-size: 2em;
 }
 
 .key p {
   font-size: 2.5rem;
-  font-family: 'Monoton';  
-  margin-bottom: 0; 
+  font-family: 'Monoton';
+  margin-bottom: 0;
 }
 
 .container {
-  width: 40%; 
   margin: 0 auto;
   background-color: rgb(39, 39, 39);
-  padding: 50px 0;
-  border: 5px solid black;  
+  padding: 50px;
+  display: grid;
+  place-items: center;
+  height: 80vh;
 }
 
 .header {
   margin: 0 auto;
   text-align: center;
+  display: grid;
+  place-items: center;
 }
 
-.wrapper{
+.divider {
+  background-image: url("images/pattern-divider-desktop.svg");
+  width: 444px;
+  height: 16px;
+  position: absolute;
+  margin-top: 50px;
+}
+
+.wrapper {
   width: 500px;
-  margin: 0 auto; 
+  margin: 0 auto;
   position: relative;
 }
 
-.keyboard{
-  display:grid;
-  grid-template-columns:1fr 1fr 1fr; 
-  grid-row-gap:40px;
-  justify-items:center; 
-  margin-bottom:100px; 
+.keyboard {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-row-gap: 40px;
+  justify-items: center;
+  margin-bottom: 100px;
 }
-.key{
-  width:110px;
-  height:110px; 
-  display:flex;
-  flex-direction:column;
-  align-items:center;
+
+.key {
+  width: 110px;
+  height: 110px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   border: 2px solid black;
   background-color: rgb(231, 44, 44);
   border-radius: 5px;
   transition: all .12s ease-in-out;
-  justify-content: center; 
+  justify-content: center;
 }
 
 .playing {
